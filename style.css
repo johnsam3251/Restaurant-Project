@@ -1,0 +1,623 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* body { 
+  background-image: linear-gradient(to right, #f6eade 75%, #f86666 25%);
+}*/
+header {
+  top: 0;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-image: linear-gradient(to right, #f6eade 75%, #f86666 25%);
+}
+header img {
+  margin-top: 2px;
+  margin-left: 100px;
+}
+.navbar .menu {
+  color: #f86666;
+  cursor: pointer;
+}
+.navbar .baricon {
+  display: none;
+}
+header nav {
+  margin-top: 15px;
+}
+.navbar a {
+  padding: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+header .btn {
+  margin-top: 10px;
+  margin-right: 120px;
+  height: 25px;
+  padding-inline: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: ease-out 0.9s;
+  box-shadow: inset 0 0 0 0 white;
+}
+header .btn:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: black;
+  
+}
+.section1 {
+  width: 100%;
+  background-image: linear-gradient(to right, #f6eade 75%, #f86666 25%);
+}
+.Homepage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.part1 {
+  margin-left: 100px;
+}
+.part1 h1 {
+  font-size: 80px;
+  margin-top: 80px;
+}
+.part1 h1 {
+  position: relative;
+}
+.part1 h1::after {
+  height: 30%;
+  width: 35%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #f6eade;
+  border-left: 2px solid #f6eade;
+  animation: typing 3s steps(13) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.part1 p {
+  font-size: 13px;
+}
+.part2 {
+  margin-top: 40px;
+  margin-right: 200px;
+}
+.part1 button {
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 20px;
+  border: none;
+}
+.btn1 {
+  background-color: #4a976d;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  transition: ease-out 0.9s;
+  box-shadow: inset 0 0 0 0 #f86666;
+}
+.btn1:hover{
+  box-shadow: inset 100px 0 0 0 #f86666;
+  color: black;
+}
+.btn2 {
+  background-color: #f6eade;
+  margin-left: 5px;
+}
+.btn2 i {
+  border: none;
+  background-color: white;
+  border-radius: 50px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  color: #f86666;
+  cursor: pointer;
+}
+.section2 {
+  background-color: white;
+}
+.Restau {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Restau img {
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.junkword {
+  margin-top: 100px;
+  margin-left: 80px;
+}
+.junkword h2 {
+  margin-top: 30px;
+  font-size: 40px;
+}
+.junkword p {
+  font-size: 13px;
+}
+.junkword button {
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 20px;
+  background-color: #4a976d;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: ease-out 0.9s;
+  box-shadow: inset 0 0 0 0 #f86666;
+}
+.junkword button:hover {
+  box-shadow: inset 100px 0 0 0 #f86666;
+  color: black;
+}
+.section3 {
+  background-color: #f86666;
+  width: 100%;
+}
+.foodlist {
+  text-align: center;
+  color: white;
+}
+.foodlist h2 {
+  font-size: 30px;
+}
+.foodlist button {
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding-block: 10px;
+  padding-inline: 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.336);
+}
+.foodlist button:hover {
+  background-color: white;
+  color: #f86666;
+}
+.foodtype {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 90px;
+}
+.food1 {
+  margin-top: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 40vh;
+  width: 17%;
+  outline: none;
+  transition: ease-out 0.9s;
+  box-shadow: inset 0 0 0 0 black;
+  background-color: rgba(255, 255, 255, 0.336);
+}
+.food1 h4 {
+  color: white;
+  text-align: center;
+}
+.food1:hover {
+  cursor: pointer;
+  box-shadow: inset 100px 0 0 0 black;
+}
+.food1:hover h4 {
+  color: #f86666;
+}
+.food2 {
+  width: 15%;
+  background-color: white;
+  border-radius: 10px;
+  outline: none;
+  transition: linear 0.9s;
+  box-shadow: inset 0 0 0 0 black;
+}
+
+.food2 h4 {
+  margin-top: 40px;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+.food2:hover {
+  color: white;
+  cursor: pointer;
+  box-shadow: inset 300px 0 0 0 black;
+}
+.food2:hover h4 {
+  color: #f86666;
+}
+.food3 {
+  border: 1px solid white;
+  margin-top: 40px;
+  width: 17%;
+  background-color: rgba(255, 255, 255, 0.336);
+  border-radius: 50%;
+  height: 40vh;
+  outline: none;
+  box-shadow: inset 0 0 0 0 black;
+  transition: ease-out 0.9s;
+}
+.food3:hover {
+  box-shadow: inset 100px 0 0 0 black;
+  cursor: pointer;
+}
+.food3:hover h4 {
+  color: #f86666;
+}
+.food3 h4 {
+  color: white;
+  text-align: center;
+}
+.morebtn {
+  margin-left: 45%;
+  padding-block: 10px;
+  padding-inline: 30px;
+  border-radius: 20px;
+  background-color: #51956f;
+  border: 1px solid #4a976d;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: ease-out 0.9s;
+  box-shadow: inset 0 0 0 0 black;
+}
+.morebtn:hover {
+  box-shadow: inset 100px 0 0 0 black;
+}
+.section4 {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #f6eade 90%, black 10%);
+}
+.collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 50px;
+}
+.colletn1 h2 {
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+.colletn1 p {
+  font-size: 13px;
+}
+.colletn1 button {
+  background-color: #4a976d;
+  padding-block: 10px;
+  padding-inline: 20px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  transition: ease-out 0.9s;
+  box-shadow: inset 0 0 0 0 #f86666;
+}
+.colletn1 button:hover {
+  box-shadow: inset 100px 0 0 0 #f86666;
+  color: black;
+}
+.popu {
+  text-align: center;
+}
+.popularfood {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
+}
+.larfood1 {
+  width: 18%;
+  height: 40vh;
+  background-color: white;
+  border-radius: 10px;
+}
+.larfood2 {
+  width: 18%;
+  height: 40vh;
+  background-color: white;
+  border-radius: 10px;
+}
+.larfood3 {
+  width: 18%;
+  height: 40vh;
+  background-color: white;
+  border-radius: 10px;
+}
+.larfood4 {
+  width: 18%;
+  height: 40vh;
+  background-color: white;
+  border-radius: 10px;
+}
+.foodname {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 10px;
+}
+.name1 {
+  margin-left: 12%;
+}
+.name2 {
+  margin-left: 17%;
+}
+.name3 {
+  margin-left: 16%;
+}
+.name4 {
+  margin-left: 14%;
+}
+.foodname span {
+  color: #f86666;
+}
+.section4 .morebtn {
+  margin-left: 45%;
+  padding-block: 10px;
+  padding-inline: 40px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background-color: #4a976d;
+  cursor: pointer;
+}
+.special {
+  margin-left: 25%;
+  border: 1px solid #f6eade;
+  border-radius: 50px;
+  background-color: white;
+  width: 50%;
+  padding-block: 30px;
+  padding-inline: 30px;
+}
+.special h2 {
+  text-align: center;
+}
+.special p {
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.special input {
+  border: 1px solid #4a976d;
+  border-radius: 10px;
+  padding-block: 10px;
+  padding-inline: 10px;
+}
+.special input {
+  border-right: none;
+  border-end-end-radius: 0;
+  border-start-end-radius: 0;
+}
+.special button {
+  border: 1px solid #4a976d;
+  border-radius: 10px;
+  color: white;
+  background-color: #4a976d;
+  padding-block: 10px;
+  padding-inline: 10px;
+  border-start-start-radius: 0;
+  border-end-start-radius: 0;
+  cursor: pointer;
+  transition: ease-out 0.9s;
+  outline: none;
+  box-shadow: inset 0 0 0 0 black;
+}
+.special button:hover {
+  box-shadow: inset 100px 0 0 0 black;
+}
+.special form {
+  margin-left: 27%;
+}
+.section5 {
+  background-color: black;
+}
+.testimony {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 160px;
+}
+.testimony {
+  background-color: black;
+}
+.last1 {
+  color: white;
+  line-height: 30px;
+  font-size: 10px;
+}
+.last2 {
+  color: white;
+  line-height: 30px;
+}
+.last2 p {
+  font-size: 10px;
+}
+.last3 {
+  color: white;
+  line-height: 30px;
+}
+.last3 p {
+  font-size: 10px;
+}
+.last4 {
+  color: white;
+  line-height: 30px;
+}
+.last4 p {
+  font-size: 10px;
+}
+footer {
+  background-color: black;
+}
+footer p {
+  text-align: center;
+  color: white;
+}
+footer hr {
+  width: 70%;
+  margin-left: 15%;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-repeat: no-repeat;
+    width: 150%;
+    background-image: linear-gradient(to right, #f6eade 75%, #f86666 25%);
+  }
+  header {
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #f6eade 100%, #f86666 100%);
+    position: unset;
+    width: 150%;
+    height: 10vh;
+  }
+  .Homepage {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .Homepage h1,
+  p,
+  button {
+    margin-left: -170px;
+  }
+  .Homepage h1 {
+    font-size: 50px;
+  }
+  header img {
+    margin-left: 20px;
+  }
+  .btn2 {
+    font-size: 10px;
+  }
+  .menu {
+    display: inline-block;
+    margin-top: -40px;
+    margin-left: -50px;
+  }
+  .navbar .baricon {
+    display: inline;
+    margin-right: 100px;
+    cursor: pointer;
+  }
+  .navbar a,
+  .btn {
+    display: none;
+  }
+  .junkimg img {
+    margin-left: -20%;
+    margin-top: 40%;
+    width: 200px;
+    height: 250px;
+  }
+  .section1,
+  .section2,
+  .section3,
+  .section4,
+  .section5 {
+    width: 150%;
+  }
+  .junkword p {
+    margin-left: 2%;
+  }
+  .junkword button {
+    margin-left: 2%;
+  }
+  .food1 {
+    width: 20%;
+  }
+  .food1 img {
+    margin-left: -12%;
+  }
+  .food2 {
+    width: 20%;
+  }
+  .food2 img {
+    margin-left: -12%;
+  }
+  .food3 {
+    padding-top: 10px;
+    width: 20%;
+  }
+  .food3 img {
+    margin-left: -11%;
+  }
+  .morebtn {
+    margin-left: 42%;
+  }
+  .colletn1 h2 {
+    margin-left: 20%;
+  }
+  .colletn1 p {
+    margin-left: 20%;
+  }
+  .collection {
+    flex-wrap: nowrap;
+  }
+  .larfood1 {
+    width: 20%;
+  }
+  .larfood1 img {
+    width: 150px;
+    height: 150px;
+  }
+  .larfood2 {
+    width: 20%;
+  }
+  .larfood2 img {
+    width: 150px;
+    height: 150px;
+  }
+  .larfood3 {
+    width: 20%;
+  }
+  .larfood3 img {
+    width: 150px;
+    height: 150px;
+  }
+  .larfood4 {
+    width: 20%;
+  }
+  .larfood4 img {
+    width: 150px;
+    height: 150px;
+  }
+  .special p {
+    margin-left: 2%;
+  }
+  .special {
+    width: 50%;
+  }
+  .special input {
+    margin-left: -19%;
+  }
+  .special input button {
+    margin-right: -30%;
+  }
+}
